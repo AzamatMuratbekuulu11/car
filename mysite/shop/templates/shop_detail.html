@@ -1,0 +1,13 @@
+<li>
+    <p>Name: {{shop.name_shop }}</p>
+    <p><img src="{{ shop.image.urls }}"></p>
+    <p>Category: {{shop.category }}</p>
+    <p>Marka: {{shop.marka}}</p>
+    <p>Model: {{shop.model}}</p>
+    <p>Price: {{ shop.price }}</p>
+    <p>Description: {{ shop.description }}</p>
+    <p>Year: {{ shop.year }}</p>
+    <p>Created date: {{ shop.date }}</p>
+</li>
+    <button><a href="{% url 'shop_update' shop.pk %}">Update</a></button>
+    <button><a href="{% url 'shop_delete' shop.pk %}">Delete</a></button>
